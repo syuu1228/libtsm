@@ -96,8 +96,7 @@ noinst_LTLIBRARIES += libshl.la
 
 libshl_la_SOURCES = \
 	src/shl_array.h \
-	src/shl_htable.h \
-	src/shl_htable.c \
+        src/shl_hashtable.h \
 	src/shl_llog.h
 libshl_la_CPPFLAGS = $(AM_CPPFLAGS)
 libshl_la_LDFLAGS = $(AM_LDFLAGS)
@@ -124,6 +123,14 @@ libtsm_la_SOURCES = \
 	src/tsm_vte_charsets.c \
 	external/wcwidth.h \
 	external/wcwidth.c \
+        external/tommyhash.h \
+        external/tommyhash.c \
+        external/tommyhashdyn.h \
+        external/tommyhashdyn.c \
+        external/tommylist.h \
+        external/tommylist.c \
+        external/tommytypes.h \
+        external/tommychain.h \
 	external/xkbcommon-keysyms.h
 libtsm_test_la_SOURCES = $(libtsm_la_SOURCES)
 
